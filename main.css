@@ -1,11 +1,11 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #0E2A39;
-    color: #A558C8;
+    background-color: #0E2F56;
+    color: #118DF0;
 }
 
 header {
-    background-color: #0E2A39;
+    background-color: #0E2F56;
 }
 
 .navbar img {
@@ -14,12 +14,12 @@ header {
 
 .nav-link,
 .nav-link:hover {
-    color: #A558C8;
+    color: #118DF0;
     font-size: 20px;
 }
 
 .nav-item i {
-    color: #A558C8;
+    color: #118DF0;
 }
 
 #saudacao img {
@@ -31,7 +31,7 @@ header {
 }
 
 #saudacao p {
-    color: #fff;
+    color: #ECECDA;
     font-weight: 300;
     font-size: 20px;
 }
