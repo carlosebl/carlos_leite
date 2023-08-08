@@ -1,25 +1,25 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #0E2F56;
-    color: #118DF0;
+    background-color: #F6E7D8;
+    color: #1C191A;
 }
 
 header {
-    background-color: #0E2F56;
+    background-color: #1C191A;
 }
 
 .navbar img {
-    width: 320px;
+    width: 48px;
 }
 
 .nav-link,
 .nav-link:hover {
-    color: #118DF0;
+    color: #F6E7D8;
     font-size: 20px;
 }
 
 .nav-item i {
-    color: #118DF0;
+    color: #F6E7D8;
 }
 
 #saudacao img {
@@ -27,16 +27,17 @@ header {
 }
 
 #saudacao h1 {
+    color: #07A5C3;
     font-weight: bold;
 }
 
 #saudacao p {
-    color: #ECECDA;
     font-weight: 300;
     font-size: 20px;
 }
 
 #portfolio h1 {
+    color: #07A5C3;
     text-align: center;
     font-weight: bold;
 }
