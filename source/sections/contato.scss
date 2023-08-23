@@ -15,16 +15,12 @@
         font-size: 20px;
     }
 
-    .form-control {
-        border-color: colors.$corPrimaria;
-    }
-
     .btn {
         background-color: colors.$corPrimaria;
 
         &:hover {
-            background-color: colors.$corFundo;
-            border-color: colors.$corPrimaria;
+            background-color: colors.$corSecundaria;
+            color: colors.$corPrimaria;
         }
     }
 }

@@ -88,15 +88,12 @@ header {
   color: #f14902;
   font-size: 20px;
 }
-#contato .form-control {
-  border-color: #f14902;
-}
 #contato .btn {
   background-color: #f14902;
 }
 #contato .btn:hover {
-  background-color: #fff;
-  border-color: #f14902;
+  background-color: #1C191A;
+  color: #f14902;
 }
 
 /*# sourceMappingURL=main.css.map */
