@@ -96,4 +96,25 @@ header {
   color: #f14902;
 }
 
+#obrigado {
+  background-color: #fff;
+  color: #1C191A;
+}
+#obrigado h1 {
+  color: #f14902;
+  font-weight: bold;
+  font-size: 48px;
+}
+#obrigado p {
+  font-weight: 300;
+  font-size: 20px;
+}
+#obrigado .btn {
+  background-color: #f14902;
+}
+#obrigado .btn:hover {
+  background-color: #1C191A;
+  color: #f14902;
+}
+
 /*# sourceMappingURL=main.css.map */

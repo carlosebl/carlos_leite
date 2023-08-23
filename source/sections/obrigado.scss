@@ -1,0 +1,26 @@
+@use '../config/colors';
+
+#obrigado {
+    background-color: colors.$corFundo;
+    color: colors.$corSecundaria;
+
+    h1 {
+        color: colors.$corPrimaria;
+        font-weight: bold;
+        font-size: 48px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+    .btn {
+        background-color: colors.$corPrimaria;
+
+        &:hover {
+            background-color: colors.$corSecundaria;
+            color: colors.$corPrimaria;
+        }
+    }
+}
