@@ -1,0 +1,23 @@
+@use '../config/colors';
+
+header {
+    background-color: colors.$corSecundaria;
+}
+
+.navbar img {
+    width: 48px;
+}
+
+.nav-link {
+    color: colors.$corPrimaria;
+    font-size: 20px;
+}
+
+.nav-item i {
+    color: colors.$corPrimaria;
+}
+
+.nav-link:hover,
+.nav-item i:hover {
+    color: colors.$corFundo;
+}
