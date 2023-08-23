@@ -1,0 +1,30 @@
+@use '../config/colors';
+
+#contato {
+    background-color: colors.$corFundo;
+    color: colors.$corSecundaria;
+
+    h1 {
+        color: colors.$corPrimaria;
+        font-weight: bold;
+        font-size: 48px;
+    }
+
+    .form-label {
+        color: colors.$corPrimaria;
+        font-size: 20px;
+    }
+
+    .form-control {
+        border-color: colors.$corPrimaria;
+    }
+
+    .btn {
+        background-color: colors.$corPrimaria;
+
+        &:hover {
+            background-color: colors.$corFundo;
+            border-color: colors.$corPrimaria;
+        }
+    }
+}

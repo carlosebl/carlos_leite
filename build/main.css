@@ -6,21 +6,27 @@ header {
   background-color: #1C191A;
 }
 
-.navbar img {
-  width: 48px;
+#titulo .nav-link {
+  color: #fff;
+  font-size: 24px;
+}
+#titulo .nav-link:hover {
+  color: #f14902;
 }
 
-.nav-link {
+#menu-navegacao .nav-link,
+#social-links .nav-link {
   color: #f14902;
   font-size: 20px;
 }
-
-.nav-item i {
+#menu-navegacao .nav-item i,
+#social-links .nav-item i {
   color: #f14902;
 }
-
-.nav-link:hover,
-.nav-item i:hover {
+#menu-navegacao .nav-link:hover,
+#menu-navegacao .nav-item i:hover,
+#social-links .nav-link:hover,
+#social-links .nav-item i:hover {
   color: #fff;
 }
 
@@ -28,12 +34,10 @@ header {
   background-color: #fff;
   color: #1C191A;
 }
-#saudacao img {
-  width: 100%;
-}
 #saudacao h1 {
   color: #f14902;
   font-weight: bold;
+  font-size: 48px;
 }
 #saudacao p {
   font-weight: 300;
@@ -44,17 +48,55 @@ header {
   color: #f14902;
   text-align: center;
   font-weight: bold;
+  font-size: 48px;
 }
-
-.img-thumbnail {
+#portfolio .img-thumbnail {
   max-width: 100%;
   filter: blur(3px);
   -webkit-filter: blur(3px);
   border: none;
 }
-.img-thumbnail:hover {
+#portfolio .img-thumbnail:hover {
   border: 4px solid #1C191A;
   filter: none;
+}
+
+#sobre {
+  background-color: #fff;
+  color: #1C191A;
+}
+#sobre h1 {
+  color: #f14902;
+  font-weight: bold;
+  font-size: 48px;
+}
+#sobre p {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+#contato {
+  background-color: #fff;
+  color: #1C191A;
+}
+#contato h1 {
+  color: #f14902;
+  font-weight: bold;
+  font-size: 48px;
+}
+#contato .form-label {
+  color: #f14902;
+  font-size: 20px;
+}
+#contato .form-control {
+  border-color: #f14902;
+}
+#contato .btn {
+  background-color: #f14902;
+}
+#contato .btn:hover {
+  background-color: #fff;
+  border-color: #f14902;
 }
 
 /*# sourceMappingURL=main.css.map */

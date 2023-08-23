@@ -4,20 +4,30 @@ header {
     background-color: colors.$corSecundaria;
 }
 
-.navbar img {
-    width: 48px;
+#titulo {
+    .nav-link {
+        color: colors.$corFundo;
+        font-size: 24px;
+    }
+
+    .nav-link:hover {
+        color: colors.$corPrimaria
+    }
 }
 
-.nav-link {
-    color: colors.$corPrimaria;
-    font-size: 20px;
-}
-
-.nav-item i {
-    color: colors.$corPrimaria;
-}
-
-.nav-link:hover,
-.nav-item i:hover {
-    color: colors.$corFundo;
+#menu-navegacao,
+#social-links {
+    .nav-link {
+        color: colors.$corPrimaria;
+        font-size: 20px;
+    }
+    
+    .nav-item i {
+        color: colors.$corPrimaria;
+    }
+    
+    .nav-link:hover,
+    .nav-item i:hover {
+        color: colors.$corFundo;
+    }
 }
