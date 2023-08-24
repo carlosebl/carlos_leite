@@ -42,28 +42,21 @@ header {
 
 #projetos h1 {
   color: #f14902;
-  text-align: center;
   font-weight: bold;
   font-size: 48px;
 }
-#projetos .card {
-  background-color: #1C191A;
+#projetos .row {
+  border-bottom: 1px solid #eeeeee;
 }
-#projetos .card .card-title {
+#projetos .row .card {
   border: none;
+}
+#projetos .row .card h3 {
   color: #f14902;
-  background: none;
-  font-size: 24px;
 }
-#projetos .card img {
-  filter: blur(2px);
-  -webkit-filter: blur(3px);
-}
-#projetos .card img:hover {
-  filter: none;
-}
-#projetos .card-footer {
-  color: #fff;
+#projetos .row .card .card-tags {
+  white-space: nowrap;
+  background-color: #eeeeee;
 }
 
 #sobre h1 {

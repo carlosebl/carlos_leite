@@ -3,32 +3,24 @@
 #projetos {
     h1 {
     color: colors.$corPrimaria;
-    text-align: center;
     font-weight: bold;
     font-size: 48px;
     }
 
-    .card {
-        background-color: colors.$corSecundaria;
+    .row {
+        border-bottom: 1px solid colors.$corTag;
 
-        .card-title {
+        .card {
             border: none;
-            color: colors.$corPrimaria;
-            background: none;
-            font-size: 24px;
-        }
-
-        img {
-            filter: blur(2px);
-            -webkit-filter: blur(3px);
-
-            &:hover {
-                filter: none;
+    
+            h3 {
+                color: colors.$corPrimaria;
+            }
+    
+            .card-tags {
+                white-space: nowrap;
+                background-color: colors.$corTag;
             }
         }
-    }
-
-    .card-footer {
-        color: colors.$corFundo;
     }
 }
