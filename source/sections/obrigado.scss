@@ -1,9 +1,6 @@
 @use '../config/colors';
 
 #obrigado {
-    background-color: colors.$corFundo;
-    color: colors.$corSecundaria;
-
     h1 {
         color: colors.$corPrimaria;
         font-weight: bold;

@@ -1,7 +1,13 @@
 @use 'config/reset';
+@use 'config/colors';
 @use 'sections/header';
 @use 'sections/saudacao';
-@use 'sections/portfolio';
+@use 'sections/projetos';
 @use 'sections/sobre';
 @use 'sections/contato';
 @use 'sections/obrigado';
+
+body {
+    background-color: colors.$corFundo;
+    color: colors.$corSecundaria;
+}
