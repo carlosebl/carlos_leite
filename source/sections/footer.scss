@@ -1,23 +1,23 @@
 @use '../config/colors';
 
 footer {
-    background-color: colors.$corSecundaria;
+    background-color: colors.$corPrimaria;
 
     #copy {
         h3 {
-            color: colors.$corTextoMenu;
+            color: colors.$corSecundaria;
             font-size: 20px;
         }
     }
     
     #social-links {
         .nav-item i {
-            color: colors.$corTextoMenu;
+            color: colors.$corSecundaria;
         }
         
         .nav-link:hover,
         .nav-item i:hover {
-            color: colors.$corPrimaria;
+            color: colors.$corTextoMenu;
         }
     }
 }

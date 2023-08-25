@@ -13,8 +13,11 @@ header {
     }
 
     .navbar-toggler {
-        background-color: colors.$corPrimaria;
         max-height: 36px;
+
+        i {
+            color: colors.$corPrimaria;
+        }
     }
     
     #menu-navegacao,

@@ -10,6 +10,17 @@
     .row {
         border-bottom: 1px solid colors.$corTag;
 
+        img {
+            border: 1px solid colors.$corTag;
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+
+            &:hover {
+                border: 1px solid colors.$corSecundaria;
+                filter: none;
+            }
+        }
+
         .card {
             background-color: colors.$corFundo;
             border: none;
@@ -17,9 +28,8 @@
             h3 {
                 color: colors.$corPrimaria;
             }
-    
+
             .card-tags {
-                
                 background-color: colors.$corTag;
             }
         }
@@ -30,6 +40,10 @@
     #projetos {
         h1 {
             font-size: 36px;
+        }
+
+        .tags {
+            flex-wrap: wrap;
         }
     }
 }

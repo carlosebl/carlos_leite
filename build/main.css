@@ -13,8 +13,10 @@ header .navbar-brand:hover {
   color: #f14902;
 }
 header .navbar-toggler {
-  background-color: #f14902;
   max-height: 36px;
+}
+header .navbar-toggler i {
+  color: #f14902;
 }
 header #menu-navegacao .nav-link,
 header #social-links .nav-link {
@@ -60,6 +62,15 @@ header #social-links .nav-item i:hover {
 #projetos .row {
   border-bottom: 1px solid #cccccc;
 }
+#projetos .row img {
+  border: 1px solid #cccccc;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+#projetos .row img:hover {
+  border: 1px solid #1C191A;
+  filter: none;
+}
 #projetos .row .card {
   background-color: #eeeeee;
   border: none;
@@ -74,6 +85,9 @@ header #social-links .nav-item i:hover {
 @media (max-width: 767px) {
   #projetos h1 {
     font-size: 36px;
+  }
+  #projetos .tags {
+    flex-wrap: wrap;
   }
 }
 #sobre h1 {
@@ -136,18 +150,18 @@ header #social-links .nav-item i:hover {
   }
 }
 footer {
-  background-color: #1C191A;
+  background-color: #f14902;
 }
 footer #copy h3 {
-  color: #ffffff;
+  color: #1C191A;
   font-size: 20px;
 }
 footer #social-links .nav-item i {
-  color: #ffffff;
+  color: #1C191A;
 }
 footer #social-links .nav-link:hover,
 footer #social-links .nav-item i:hover {
-  color: #f14902;
+  color: #ffffff;
 }
 
 @media (max-width: 767px) {
