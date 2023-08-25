@@ -19,8 +19,17 @@
             }
     
             .card-tags {
+                
                 background-color: colors.$corTag;
             }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #projetos {
+        h1 {
+            font-size: 36px;
         }
     }
 }

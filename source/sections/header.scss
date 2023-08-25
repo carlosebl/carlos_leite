@@ -3,15 +3,18 @@
 header {
     background-color: colors.$corSecundaria;
 
-    #titulo {
-        .nav-link {
-            color: colors.$corTextoMenu;
-            font-size: 24px;
-        }
-    
-        .nav-link:hover {
+    .navbar-brand {
+        color: colors.$corTextoMenu;
+        font-size: 24px;
+
+        &:hover {
             color: colors.$corPrimaria;
         }
+    }
+
+    .navbar-toggler {
+        background-color: colors.$corPrimaria;
+        max-height: 36px;
     }
     
     #menu-navegacao,
@@ -29,5 +32,11 @@ header {
         .nav-item i:hover {
             color: colors.$corPrimaria;
         }
+    }
+}
+
+@media (max-width: 767px) {
+    .dropdown {
+        display: block;
     }
 }

@@ -12,3 +12,11 @@
         font-size: 20px;
     }
 }
+
+@media (max-width: 767px) {
+    #saudacao {
+        h1 {
+            font-size: 36px;
+        }
+    }
+}

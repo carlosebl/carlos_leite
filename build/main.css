@@ -5,12 +5,16 @@
 header {
   background-color: #1C191A;
 }
-header #titulo .nav-link {
+header .navbar-brand {
   color: #ffffff;
   font-size: 24px;
 }
-header #titulo .nav-link:hover {
+header .navbar-brand:hover {
   color: #f14902;
+}
+header .navbar-toggler {
+  background-color: #f14902;
+  max-height: 36px;
 }
 header #menu-navegacao .nav-link,
 header #social-links .nav-link {
@@ -28,6 +32,11 @@ header #social-links .nav-item i:hover {
   color: #f14902;
 }
 
+@media (max-width: 767px) {
+  .dropdown {
+    display: block;
+  }
+}
 #saudacao h1 {
   color: #1C191A;
   font-weight: bold;
@@ -38,6 +47,11 @@ header #social-links .nav-item i:hover {
   font-size: 20px;
 }
 
+@media (max-width: 767px) {
+  #saudacao h1 {
+    font-size: 36px;
+  }
+}
 #projetos h1 {
   color: #1C191A;
   font-weight: bold;
@@ -57,6 +71,11 @@ header #social-links .nav-item i:hover {
   background-color: #cccccc;
 }
 
+@media (max-width: 767px) {
+  #projetos h1 {
+    font-size: 36px;
+  }
+}
 #sobre h1 {
   color: #1C191A;
   font-weight: bold;
@@ -67,6 +86,11 @@ header #social-links .nav-item i:hover {
   font-size: 20px;
 }
 
+@media (max-width: 767px) {
+  #sobre h1 {
+    font-size: 36px;
+  }
+}
 #contato h1 {
   color: #1C191A;
   font-weight: bold;
@@ -84,6 +108,11 @@ header #social-links .nav-item i:hover {
   color: #f14902;
 }
 
+@media (max-width: 767px) {
+  #contato h1 {
+    font-size: 36px;
+  }
+}
 #obrigado h1 {
   color: #1C191A;
   font-weight: bold;
@@ -101,6 +130,38 @@ header #social-links .nav-item i:hover {
   color: #f14902;
 }
 
+@media (max-width: 767px) {
+  #obrigado h1 {
+    font-size: 36px;
+  }
+}
+footer {
+  background-color: #1C191A;
+}
+footer #copy h3 {
+  color: #ffffff;
+  font-size: 20px;
+}
+footer #social-links .nav-item i {
+  color: #ffffff;
+}
+footer #social-links .nav-link:hover,
+footer #social-links .nav-item i:hover {
+  color: #f14902;
+}
+
+@media (max-width: 767px) {
+  #copy {
+    width: 100%;
+    text-align: center;
+  }
+  #social-links {
+    width: 100%;
+  }
+  #social-links .nav-pills {
+    justify-content: center;
+  }
+}
 body {
   background-color: #eeeeee;
   color: #1C191A;

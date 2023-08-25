@@ -6,6 +6,7 @@
 @use 'sections/sobre';
 @use 'sections/contato';
 @use 'sections/obrigado';
+@use 'sections/footer';
 
 body {
     background-color: colors.$corFundo;
