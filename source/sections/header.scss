@@ -2,32 +2,32 @@
 
 header {
     background-color: colors.$corSecundaria;
-}
 
-#titulo {
-    .nav-link {
-        color: colors.$corFundo;
-        font-size: 24px;
-    }
-
-    .nav-link:hover {
-        color: colors.$corPrimaria
-    }
-}
-
-#menu-navegacao,
-#social-links {
-    .nav-link {
-        color: colors.$corPrimaria;
-        font-size: 20px;
+    #titulo {
+        .nav-link {
+            color: colors.$corTextoMenu;
+            font-size: 24px;
+        }
+    
+        .nav-link:hover {
+            color: colors.$corPrimaria;
+        }
     }
     
-    .nav-item i {
-        color: colors.$corPrimaria;
-    }
-    
-    .nav-link:hover,
-    .nav-item i:hover {
-        color: colors.$corFundo;
+    #menu-navegacao,
+    #social-links {
+        .nav-link {
+            color: colors.$corTextoMenu;
+            font-size: 20px;
+        }
+        
+        .nav-item i {
+            color: colors.$corTextoMenu;
+        }
+        
+        .nav-link:hover,
+        .nav-item i:hover {
+            color: colors.$corPrimaria;
+        }
     }
 }

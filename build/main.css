@@ -5,33 +5,31 @@
 header {
   background-color: #1C191A;
 }
-
-#titulo .nav-link {
-  color: #fff;
+header #titulo .nav-link {
+  color: #ffffff;
   font-size: 24px;
 }
-#titulo .nav-link:hover {
+header #titulo .nav-link:hover {
   color: #f14902;
 }
-
-#menu-navegacao .nav-link,
-#social-links .nav-link {
-  color: #f14902;
+header #menu-navegacao .nav-link,
+header #social-links .nav-link {
+  color: #ffffff;
   font-size: 20px;
 }
-#menu-navegacao .nav-item i,
-#social-links .nav-item i {
-  color: #f14902;
+header #menu-navegacao .nav-item i,
+header #social-links .nav-item i {
+  color: #ffffff;
 }
-#menu-navegacao .nav-link:hover,
-#menu-navegacao .nav-item i:hover,
-#social-links .nav-link:hover,
-#social-links .nav-item i:hover {
-  color: #fff;
+header #menu-navegacao .nav-link:hover,
+header #menu-navegacao .nav-item i:hover,
+header #social-links .nav-link:hover,
+header #social-links .nav-item i:hover {
+  color: #f14902;
 }
 
 #saudacao h1 {
-  color: #f14902;
+  color: #1C191A;
   font-weight: bold;
   font-size: 48px;
 }
@@ -41,26 +39,26 @@ header {
 }
 
 #projetos h1 {
-  color: #f14902;
+  color: #1C191A;
   font-weight: bold;
   font-size: 48px;
 }
 #projetos .row {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #cccccc;
 }
 #projetos .row .card {
+  background-color: #eeeeee;
   border: none;
 }
 #projetos .row .card h3 {
   color: #f14902;
 }
 #projetos .row .card .card-tags {
-  white-space: nowrap;
-  background-color: #eeeeee;
+  background-color: #cccccc;
 }
 
 #sobre h1 {
-  color: #f14902;
+  color: #1C191A;
   font-weight: bold;
   font-size: 48px;
 }
@@ -70,7 +68,7 @@ header {
 }
 
 #contato h1 {
-  color: #f14902;
+  color: #1C191A;
   font-weight: bold;
   font-size: 48px;
 }
@@ -87,7 +85,7 @@ header {
 }
 
 #obrigado h1 {
-  color: #f14902;
+  color: #1C191A;
   font-weight: bold;
   font-size: 48px;
 }
@@ -104,7 +102,7 @@ header {
 }
 
 body {
-  background-color: #fff;
+  background-color: #eeeeee;
   color: #1C191A;
 }
 
