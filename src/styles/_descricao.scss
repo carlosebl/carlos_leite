@@ -1,0 +1,6 @@
+@use 'variaveis';
+
+.descricao {
+    background: variaveis.$corBotao;
+    background: variaveis.$gradiente;
+}
