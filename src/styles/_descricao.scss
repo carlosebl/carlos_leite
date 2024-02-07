@@ -43,15 +43,20 @@
             &__nav {
                 
                 &__menu {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 32px;
+                    background-color: variaveis.$corTexto;
+                    padding: 8px;
+                    border-radius: 10px;
 
                     &__item {
-                        margin-bottom: 32px;
-
                         &__link {
                             text-decoration: none;
 
                             .bi {
-                                color: variaveis.$corTexto;
+                                color: variaveis.$corFundo;
                             }
                         }
                     }
@@ -71,7 +76,14 @@
         line-height: 32px;
         letter-spacing: 0.24px;
         border-radius: 5px;
-        border: 1px solid rgba(255, 255, 255, 0.30);
+        border: 1px solid variaveis.$corBordas;
+        cursor: pointer;
+
+        
+        &:hover {
+            background-color: variaveis.$corBotaoHover;
+            color: variaveis.$corTexto;
+        }
     }
 
     .seta {

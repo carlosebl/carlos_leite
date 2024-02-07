@@ -1,0 +1,80 @@
+@use 'variaveis';
+
+.contato {
+    .container {
+        max-width: 1280px;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    &__titulo {
+        h2 {
+            width: 100%;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #fff;
+            font-size: 40px;
+            font-weight: normal;
+            line-height: 56px;
+        }
+    }
+
+    &__form {
+        margin-top: 50px;
+        font-family: variaveis.$inter;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 24px;
+
+            label {
+                line-height: 24px;
+                margin-bottom: 12px;
+            }
+
+            input {
+                width: 600px;
+                height: 56px;
+                padding: 10px;
+                border-radius: 4px;
+                border: 1px solid variaveis.$corBordas;
+                opacity: 0.8;
+                background-color: variaveis.$corFundo;
+                color: variaveis.$corTexto;
+                font-size: 16px;
+            }
+
+            textarea {
+                width: 600px;
+                height: 180px;
+                padding: 10px;
+                border-radius: 4px;
+                border: 1px solid variaveis.$corBordas;
+                opacity: 0.8;
+                background-color: variaveis.$corFundo;
+                color: variaveis.$corTexto;
+                font-size: 16px;
+                resize: none;
+            }
+        }
+        button {
+            width: 176px;
+            height: 64px;
+            background-color: variaveis.$corBotao;
+            color: variaveis.$corTexto;
+            font-family: variaveis.$inter;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.24px;
+            border-radius: 5px;
+            border: 1px solid variaveis.$corBordas;
+            cursor: pointer;
+
+            &:hover {
+                background-color: variaveis.$corBotaoHover;
+                color: variaveis.$corTexto;
+            }
+        }
+    }
+}

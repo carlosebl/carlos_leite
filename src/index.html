@@ -189,30 +189,33 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>Contato</h2>
-            </div>
-            <div>
-                <form>
-                    <div>
+        <section class="contato" id="contato">
+            <div class="container">
+                <div class="contato__titulo">
+                    <h2>Contato</h2>
+                </div>
+                <form class="contato__form" action="https://formsubmit.co/carlosebl@gmail.com" method="POST">
+                    <div class="contato__form__item">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome">
+                        <input type="text" id="nome" name="nome" required>
                     </div>
-                    <div>
-                        <label for="email">e-mail</label>
-                        <input type="mail" id="email" name="email">
+                    <div class="contato__form__item">
+                        <label for="email">E-mail</label>
+                        <input type="mail" id="email" name="email" required>
                     </div>
-                    <div>
+                    <div class="contato__form__item">
                         <label for="fone">Telefone</label>
-                        <input type="tel" id="fone" name="fone">
+                        <input type="tel" id="fone" name="fone" >
                     </div>
-                    <div>
+                    <div class="contato__form__item">
                         <label for="msg">Mensagem</label>
-                        <textarea name="msg" id="msg"></textarea>
+                        <textarea id="msg" name="msg" required></textarea>
                     </div>
+                    <button class="contato__form__botao" type="submit">Enviar</button>
+                    <input type="hidden" name="_subject" value="Nova mensagem!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
                 </form>
-                <button type="submit">Enviar</button>
             </div>
         </section>
     </div>
