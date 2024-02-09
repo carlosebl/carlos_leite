@@ -66,6 +66,10 @@
             &__nav {
                 position: fixed;
                 z-index: 100;
+                border: 1px solid variaveis.$corBordas;
+                border-radius: 10px;
+                padding: 8px;
+                background-color: variaveis.$corTexto;
 
                 &__menu {
                     display: flex;
@@ -78,7 +82,7 @@
                             text-decoration: none;
 
                             .bi {
-                                color: variaveis.$corTexto;
+                                color: variaveis.$corFundo;
                             }
                         }
                     }

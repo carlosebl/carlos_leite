@@ -50,6 +50,9 @@
                 top: 1rem;
                 left: 1rem;
                 padding: 0 8px;
+                background-color: variaveis.$corFundo;
+                border: 1px solid variaveis.$corBordas;
+                border-radius: 10px;
 
                 &__menu {
                     display: flex;
@@ -73,11 +76,14 @@
                         z-index: 100;
                         top: 2rem;
                         right: 1rem;
-                        padding: 0 8px;
+                        padding: 8px;
+                        margin-top: -16px;
                         border: none;
                         cursor: pointer;
                         color: variaveis.$corTexto;
                         background-color: variaveis.$corFundo;
+                        border: 1px solid variaveis.$corBordas;
+                        border-radius: 10px;
                     }
                 }
             }
