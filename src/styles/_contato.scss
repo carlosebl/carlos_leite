@@ -5,6 +5,11 @@
         max-width: 1280px;
         width: 100%;
         margin-top: 100px;
+
+        @media (max-width: 1024px) {
+            width: 90%;
+            margin-top: 156px;
+        }
     }
 
     &__titulo {
@@ -15,6 +20,11 @@
             font-size: 40px;
             font-weight: normal;
             line-height: 56px;
+
+            @media (max-width: 1024px) {
+                font-size: 24px;
+                line-height: 32px;
+            }
         }
     }
 
@@ -31,6 +41,11 @@
             label {
                 line-height: 24px;
                 margin-bottom: 12px;
+
+                @media (max-width: 1024px) {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
             }
 
             input {
@@ -43,6 +58,13 @@
                 background-color: variaveis.$corFundo;
                 color: variaveis.$corTexto;
                 font-size: 16px;
+
+                @media (max-width: 1024px) {
+                    width: 100%;
+                    height: 40px;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
             }
 
             textarea {
@@ -56,6 +78,13 @@
                 color: variaveis.$corTexto;
                 font-size: 16px;
                 resize: none;
+
+                @media (max-width: 1024px) {
+                    width: 100%;
+                    height: 144px;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
             }
         }
         button {
@@ -73,6 +102,16 @@
 
             &:hover {
                 background-color: variaveis.$corBotaoHover;
+            }
+
+            @media (max-width: 1024px) {
+                width: 136px;
+                height: 52px;
+                margin-top: 40px;
+                margin-left: 8px;
+                font-size: 18px;
+                line-height: 18px;
+                letter-spacing: 0.18px;
             }
         }
     }

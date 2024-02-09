@@ -12,6 +12,11 @@
         justify-content: flex-end;
         padding-top: 10px;
         padding-bottom: 10px;
+
+        @media (max-width: 1024px) {
+            width: 90%;
+            justify-content: space-between;
+        }
     }
 
     &__desktop {
@@ -29,6 +34,87 @@
                     color: variaveis.$corTexto;
                     text-decoration: none;
                 }
+            }
+        }
+    }
+
+    &__mobile {
+        display: none;
+
+        @media (max-width: 1024px) {
+            display: flex;
+
+            &__top {
+                position: fixed;
+                z-index: 100;
+                top: 1rem;
+                left: 1rem;
+                padding: 0 8px;
+
+                &__menu {
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 32px;
+                    padding: 8px;
+
+                    &__item {
+                        &__link {
+                            text-decoration: none;
+
+                            .bi {
+                                color: variaveis.$corTexto;
+                                background-color: variaveis.$corFundo;
+                            }
+                        }
+                    }
+
+                    &__hamburger {
+                        position: fixed;
+                        z-index: 100;
+                        top: 2rem;
+                        right: 1rem;
+                        padding: 0 8px;
+                        border: none;
+                        cursor: pointer;
+                        color: variaveis.$corTexto;
+                        background-color: variaveis.$corFundo;
+                    }
+                }
+            }
+
+            .closeIcon {
+                display: none;
+            }
+
+            &__menu {
+                position: fixed;
+                transform: translateY(-100%);
+                transition: transform 0.2s;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 99;
+                background-color: variaveis.$corFundo;
+                list-style: none;
+                padding-top: 8rem;
+
+                &__item {
+                    background-color: variaveis.$corFundo;
+
+                    &__link {
+                        background-color: variaveis.$corFundo;
+                        color: variaveis.$corTexto;
+                        text-decoration: none;
+                        font-size: 24px;
+                        line-height: 40px;
+                        letter-spacing: 0.48px;
+                    }
+                }
+            }
+
+            .showMenu {
+                transform: translateY(0);
             }
         }
     }

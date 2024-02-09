@@ -6,6 +6,11 @@
         width: 100%;
         display: flex;
         justify-content: center;
+
+        @media (max-width: 1024px) {
+            display: block;
+            width: 90%;
+        }
     }
 
     &__bloco {
@@ -13,6 +18,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 1024px) {
+            width: 100%;
+            margin: 0 8px;
+        }
 
         &__texto {
             max-width: 936px;
@@ -28,6 +38,11 @@
                 line-height: normal;
                 letter-spacing: 1.2px;
                 text-transform: uppercase;
+
+                @media (max-width: 1024px) {
+                    font-size: 16px;
+                    letter-spacing: 0.8px;
+                }
             }
 
             &__descricao {
@@ -35,28 +50,35 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 56px;
+
+                @media (max-width: 1024px) {
+                    font-size: 24px;
+                    line-height: 40px;
+                }
             }
         }
     
         &__contato {
-            
+            @media (max-width: 1024px) {
+                display: none;
+            }
+
             &__nav {
-                
+                position: fixed;
+                z-index: 100;
+
                 &__menu {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     gap: 32px;
-                    background-color: variaveis.$corTexto;
-                    padding: 8px;
-                    border-radius: 10px;
 
                     &__item {
                         &__link {
                             text-decoration: none;
 
                             .bi {
-                                color: variaveis.$corFundo;
+                                color: variaveis.$corTexto;
                             }
                         }
                     }
@@ -83,10 +105,24 @@
         &:hover {
             background-color: variaveis.$corBotaoHover;
         }
+
+        @media (max-width: 1024px) {
+            width: 136px;
+            height: 52px;
+            margin-top: 40px;
+            margin-left: 8px;
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: 0.18px;
+        }
     }
 
     .seta {
         text-align: center;
         margin-top: 96px;
+
+        @media (max-width: 1024px) {
+            margin-top: 48px;
+        }
     }
 }
