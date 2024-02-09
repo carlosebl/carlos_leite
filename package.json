@@ -16,6 +16,7 @@
     "sharp": "^0.31.3"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap-icons": "^1.11.3",
+    "imask": "^7.4.0"
   }
 }
