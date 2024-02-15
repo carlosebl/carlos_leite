@@ -24,15 +24,25 @@ menuItems.forEach(
     }
 )
 
-const handlePhone = (event) => {
-    let input = event.target
-    input.value = phoneMask(input.value)
-}
+document.querySelector('[name="fone"]')
+    .addEventListener('input', function (e) {
+        const x = e.target.value.replace(/\D/g, '')
+            .match(/(\d{0,2})(\d{0,3})(\d{0,2})(\d{0,2})(\d{0,2})/);
 
-    const phoneMask = (value) => {
-    if (!value) return ""
-    value = value.replace(/\D/g,'')
-    value = value.replace(/(\d{2})(\d)/,"($1) $2")
-    value = value.replace(/(\d)(\d{4})$/,"$1-$2")
-    return value
-}
+        if (!x[1]) {
+            e.target.value = '';
+
+            return;
+        }
+
+        if (!x[2]) {
+            e.target.value = `${x[1]}`;
+
+            return;
+        }
+
+        e.target.value = `(${x[1]}) ${x[2]}`
+            + ( x[3] ? `${x[3]}` : '' )
+            + ( x[4] ? `-${x[4]}` : '' )
+            + ( x[5] ? `${x[5]}` : '' );
+    });
