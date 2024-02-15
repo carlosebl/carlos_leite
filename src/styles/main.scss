@@ -11,12 +11,24 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+
+    
 }
 
 body {
+    background-image: url(/src/images/frame.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
     background-color: variaveis.$corFundo;
     color: variaveis.$corTexto;
     margin-bottom: 20px;
+
+    @media (max-width: 1024px) {
+        background-image: url(/src/images/frame_mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 
     .container {
         max-width: 1280px;
