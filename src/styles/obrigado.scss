@@ -1,0 +1,98 @@
+@use 'variaveis';
+
+body {
+    background-color: variaveis.$corFundo;
+    color: variaveis.$corTexto;
+    margin-bottom: 20px;
+
+    .container {
+        max-width: 1280px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+        @media (max-width: 1024px) {
+            display: block;
+            width: 90%;
+        }
+
+        .descricao {
+            &__bloco {
+                padding-top: 152px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        
+                @media (max-width: 1024px) {
+                    width: 90%;
+                    margin: 0 8px;
+                }
+        
+                &__texto {
+                    max-width: 936px;
+                    width: 100%;
+                    justify-content: flex-start;
+        
+                    &__titulo {
+                        font-family: variaveis.$inter;
+                        color: variaveis.$corTitulo;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 1.2px;
+                        text-transform: uppercase;
+        
+                        @media (max-width: 1024px) {
+                            font-size: 16px;
+                            letter-spacing: 0.8px;
+                        }
+                    }
+        
+                    &__descricao {
+                        font-size: 40px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 56px;
+        
+                        @media (max-width: 1024px) {
+                            font-size: 24px;
+                            line-height: 40px;
+                        }
+                    }
+                }
+                }
+            }
+            
+        button {
+            margin-top: 80px;
+            width: 176px;
+            height: 64px;
+            background-color: variaveis.$corBotao;
+            color: variaveis.$corTexto;
+            font-family: variaveis.$inter;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.24px;
+            border-radius: 5px;
+            border: 1px solid variaveis.$corBordas;
+            cursor: pointer;
+    
+            
+            &:hover {
+                background-color: variaveis.$corBotaoHover;
+            }
+    
+            @media (max-width: 1024px) {
+                width: 136px;
+                height: 52px;
+                margin-top: 40px;
+                margin-left: 8px;
+                font-size: 18px;
+                line-height: 18px;
+                letter-spacing: 0.18px;
+            }
+        }
+    }
+}
